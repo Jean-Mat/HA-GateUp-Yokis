@@ -1,0 +1,21 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Yokis (Yno UP)",
+        "description": "Identifiants du compte utilisé dans l'app Yno UP.",
+        "data": {
+          "email": "Email",
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Email ou mot de passe incorrect",
+      "cannot_connect": "Impossible de se connecter au service Yokis"
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré"
+    }
+  }
+}

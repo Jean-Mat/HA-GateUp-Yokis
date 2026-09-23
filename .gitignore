@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Home Assistant (tests locaux)
+.storage/
+.homeassistant/
+config/
+
+# Secrets & env
+.env
+.env.*
+!.env.example
+secrets.yaml
+
+# Éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Artefacts d'analyse APK / capture réseau (volumineux, contiennent des captures d'écran personnelles)
+*.apk
+*.apks
+base-decoded/
+arm64-extracted/
+yno-up-splits/
+yno-up-patched-extracted/
+capture/
+logs/
+node_modules/
+package-lock.json
