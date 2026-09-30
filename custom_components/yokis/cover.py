@@ -70,11 +70,14 @@ class YokisCover(CoordinatorEntity[YokisCoordinator], CoverEntity):
     async def async_open_cover(self, **kwargs: Any) -> None:
         await self.coordinator.api.async_send_command(self._uuid, "open")
         await self.coordinator.async_request_refresh()
+        self.coordinator.async_start_fast_poll_burst()
 
     async def async_close_cover(self, **kwargs: Any) -> None:
         await self.coordinator.api.async_send_command(self._uuid, "close")
         await self.coordinator.async_request_refresh()
+        self.coordinator.async_start_fast_poll_burst()
 
     async def async_stop_cover(self, **kwargs: Any) -> None:
         await self.coordinator.api.async_send_command(self._uuid, "stop")
         await self.coordinator.async_request_refresh()
+        self.coordinator.async_start_fast_poll_burst()
