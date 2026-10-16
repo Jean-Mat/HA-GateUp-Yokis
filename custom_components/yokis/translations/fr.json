@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connexion à Yokis (Yno UP)",
+        "description": "Identifiants du compte utilisé dans l'app Yno UP.",
+        "data": {
+          "email": "Email",
+          "password": "Mot de passe"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnexion à Yokis (Yno UP)",
+        "description": "Yokis a refusé le compte Yno UP {email}. Saisissez son mot de passe actuel.",
+        "data": {
+          "password": "Mot de passe"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Email ou mot de passe incorrect",
+      "cannot_connect": "Impossible de se connecter au service Yokis"
+    },
+    "abort": {
+      "already_configured": "Ce compte est déjà configuré",
+      "reauth_successful": "Ré-authentification réussie"
+    }
+  },
+  "exceptions": {
+    "setup_failed": {
+      "message": "Impossible de se connecter à Yokis : {error}"
+    },
+    "update_failed": {
+      "message": "Impossible de rafraîchir les appareils Yokis : {error}"
+    },
+    "command_failed": {
+      "message": "Échec de la commande « {order} » sur {name} : {error}"
+    },
+    "auth_failed": {
+      "message": "Yokis a refusé les identifiants : {error}"
+    }
+  }
+}

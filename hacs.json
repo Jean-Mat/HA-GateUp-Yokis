@@ -1,0 +1,7 @@
+{
+  "name": "Yokis (Yno UP cloud)",
+  "homeassistant": "2026.10.0",
+  "render_readme": true,
+  "zip_release": false,
+  "content_in_root": false
+}

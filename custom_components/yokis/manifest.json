@@ -1,0 +1,13 @@
+{
+  "domain": "yokis",
+  "name": "Yokis (Yno UP cloud)",
+  "codeowners": ["@Jean-Mat"],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/Jean-Mat/HA-GateUp-Yokis",
+  "integration_type": "hub",
+  "iot_class": "cloud_push",
+  "issue_tracker": "https://github.com/Jean-Mat/HA-GateUp-Yokis/issues",
+  "requirements": [],
+  "version": "0.1.0"
+}

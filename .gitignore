@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Home Assistant (tests locaux)
+.storage/
+.homeassistant/
+config/
+
+# Secrets & env
+.env
+.env.*
+!.env.example
+secrets.yaml
+
+# Éditeurs
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Fichiers de travail locaux
+/scripts/*.yaml

@@ -1,0 +1,43 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to Yokis (Yno UP)",
+        "description": "Credentials of the account used in the Yno UP app.",
+        "data": {
+          "email": "Email",
+          "password": "Password"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect to Yokis (Yno UP)",
+        "description": "The Yno UP account {email} was refused by Yokis. Enter its current password.",
+        "data": {
+          "password": "Password"
+        }
+      }
+    },
+    "error": {
+      "invalid_auth": "Invalid email or password",
+      "cannot_connect": "Unable to connect to the Yokis service"
+    },
+    "abort": {
+      "already_configured": "This account is already configured",
+      "reauth_successful": "Re-authentication successful"
+    }
+  },
+  "exceptions": {
+    "setup_failed": {
+      "message": "Unable to connect to Yokis: {error}"
+    },
+    "update_failed": {
+      "message": "Unable to refresh Yokis devices: {error}"
+    },
+    "command_failed": {
+      "message": "Command \"{order}\" failed on {name}: {error}"
+    },
+    "auth_failed": {
+      "message": "Yokis refused the credentials: {error}"
+    }
+  }
+}
